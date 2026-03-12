@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 120px 50px;
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Outfit', sans-serif;
+
+  /* 🔥 IMPORTANT */
+  background-image: linear-gradient(to right, rgba(2, 6, 23, 0.95) 0%, rgba(2, 6, 23, 0.6) 100%), url("../assets/Ai-robut3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  box-sizing: border-box;
+}
+
+.home-text {
+  width: 50%;
+  z-index: 2;
+  margin-top: -50px;
+}
+
+.home-text h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(38px, 4.5vw, 64px);
+  margin-bottom: 24px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffffff 30%, #4facfe 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.6));
+}
+
+.home-text p {
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  line-height: 1.7;
+  margin-bottom: 36px;
+  color: #e2e8f0;
+  font-weight: 300;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+}
+
+.start-btn {
+  font-family: 'Outfit', sans-serif;
+  padding: 16px 36px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 224, 255, 0.3);
+  background: linear-gradient(135deg, rgba(0, 224, 255, 0.8), rgba(0, 102, 255, 0.9));
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0, 102, 255, 0.4);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.start-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(0, 224, 255, 0.5);
+  border-color: rgba(0, 224, 255, 0.8);
+}
+
+.home-image img {
+  width: 420px;
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 15px 35px rgba(0, 224, 255, 0.35));
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.5s ease;
+}
+
+.home-image img:hover {
+  transform: scale(1.06) translateY(-10px);
+  filter: drop-shadow(0 25px 45px rgba(0, 224, 255, 0.6));
+}
+
+
+/*
+new about
+*/
+.feature-grid-wrap {
+  font-family: 'Outfit', sans-serif;
+  padding: 40px 6vw 90px;
+  background-image: linear-gradient(to bottom, rgba(2, 6, 23, 1), rgba(15, 23, 42, 0.85)), url("../assets/Bp.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  box-sizing: border-box;
+}
+
+.feature-grid-wrap h2,
+.about-interview h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(34px, 4vw, 48px);
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(135deg, #ffffff 30%, #4facfe 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
+  margin-bottom: 40px;
+}
+
+/* 
+ .section-subtitle,
+.about-interview>p {
+  margin-top: 8px;
+  color: #00e0ff;
+  max-width: 760px;
+  line-height: 1.75;
+}  */
+
+.feature-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.feature-card {
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid var(--border-soft);
+  background: linear-gradient(155deg, rgba(54, 84, 133, 0.92), rgba(30, 41, 59, 0.62));
+  backdrop-filter: blur(10px);
+  transition: transform 0.24s ease, border-color 0.24s ease, box-shadow 0.24s ease;
+  box-shadow: 0 16px 34px rgba(141, 153, 209, 0.35);
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(34, 211, 238, 0.7);
+  box-shadow: 0 20px 36px rgba(2, 6, 23, 0.48);
+}
+
+.feature-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  color: #e2e8f0;
+  border: 1px solid rgba(148, 163, 184, 0.44);
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.84), rgba(34, 211, 238, 0.74));
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  margin-bottom: 7px;
+  color: #f8fafc;
+}
+
+.feature-card p {
+  color: #d8e2f0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/**/
+
+/* ABOUT INTERVIEW SECTION */
+.about-interview {
+  font-family: 'Outfit', sans-serif;
+  padding: 100px 50px;
+  background-image: linear-gradient(to top, rgba(2, 6, 23, 1), rgba(15, 23, 42, 0.85)), url("../assets/Ai-robot2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  box-sizing: border-box;
+}
+
+.btn-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: gray;
+}
+
+.about-interview h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(34px, 4vw, 48px);
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff 30%, #4facfe 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
+  margin-bottom: 30px;
+}
+
+.about-interview p {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  color: #e2e8f0;
+  line-height: 1.7;
+  max-width: 800px;
+  margin-bottom: 40px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.about-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.step p {
+  color: #cbd5e1;
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+}
+
+.step span {
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #020617;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 18px;
+  box-shadow: 0 4px 16px rgba(0, 224, 255, 0.4);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+  .home {
+    flex-direction: column-reverse;
+    /* Image on top usually better or bottom? Let's try text top, image bottom or check design. 
+                                      Actually column-reverse puts last element (image) first? HTML order assumption: Text then Image.
+                                      If Text is first in DOM, column reverses it so Image is top. 
+                                      Let's stick to column and adjust order if needed or just stack naturally.
+                                      Standard: Image often on top or bottom. Let's do `column` which puts Text then Image. 
+                                      Wait, usually on mobile image is on top. If DOM is Text, Image -> column is Text, Image.
+                                      Let's try center everything. */
+    flex-direction: column;
+    padding: 100px 20px 50px 20px;
+    /* Top padding to account for fixed navbar, 20px side match */
+    text-align: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .home-text {
+    width: 100%;
+  }
+
+  .home-text h1 {
+    font-size: 32px;
+    /* Smaller font on mobile */
+  }
+
+  .home-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-image img {
+    width: 280px;
+    /* Smaller image */
+  }
+
+  .about-interview {
+    padding: 60px 30px;
+    text-align: center;
+  }
+
+  .about-interview p {
+    margin: 0 auto 30px auto;
+    /* Center p max-width often aligns left, so margin auto helps */
+  }
+
+  .about-steps {
+    align-items: flex-start;
+    /* Steps usually look better left aligned even if text is centered, or center them too */
+    text-align: left;
+    /* Keep steps text left aligned for readability */
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home {
+    padding: 80px 20px 40px 20px;
+  }
+
+  .home-text h1 {
+    font-size: 28px;
+  }
+
+  .home-text p {
+    font-size: 16px;
+  }
+
+  .start-btn {
+    width: 100%;
+    /* Full width button on small screens */
+    font-size: 18px;
+  }
+
+  .about-interview {
+    padding: 50px 20px;
+  }
+
+  .about-interview h2 {
+    font-size: 26px;
+  }
+}

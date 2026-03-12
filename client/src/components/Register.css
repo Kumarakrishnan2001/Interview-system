@@ -1,0 +1,38 @@
+.register-box {
+  width: 360px;
+  padding: 30px;
+  background: #0b0f1a;
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 35px rgba(0,224,255,0.35);
+  position: relative;
+}
+
+.register-box input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg,#00e0ff,#0066ff);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  margin-top: 10px;
+}
+
+.switch-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.switch-text span {
+  color: #00e0ff;
+  cursor: pointer;
+}
