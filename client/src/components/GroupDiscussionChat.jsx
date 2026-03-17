@@ -60,6 +60,9 @@ const GroupDiscussionChat = () => {
             };
 
             recognitionRef.current.onerror = (event) => {
+                if (event.error === 'no-speech') {
+                    return;
+                }
                 console.error("Speech recognition error", event.error);
                 setIsListening(false);
             };

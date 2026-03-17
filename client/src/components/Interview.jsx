@@ -528,8 +528,8 @@ export default function Interview() {
         {/* Camera Setup Section for Personal - Only Visible After Start Clicked */}
         {interviewType === "personal" && isInterviewStarted && (
           <div className="camera-setup active">
-            <h3>Camera Setup</h3>
-            <p>Please enable your camera to proceed with the interview.</p>
+            <h3 style={{ color: "#f2f1f8ff" }}>Camera Setup</h3>
+            <p style={{ color: "#f1f0f7ff" }}>Please enable your camera to proceed with the interview.</p>
 
             {cameraPermissionError && <p className="error-text">{cameraPermissionError}</p>}
 
@@ -540,17 +540,17 @@ export default function Interview() {
                   <div className="video-overlay">Camera Active</div>
                 </div>
               ) : (
-                <div className="video-placeholder">Camera Off</div>
+                <div className="video-placeholder" style={{ color: "#f2f1f8ff" }}>Camera Off</div>
               )}
             </div>
 
             <div className="camera-controls">
               {!cameraEnabled ? (
-                <button type="button" className="btn-secondary" onClick={handleEnableCamera}>
+                <button type="button" className="btn-primary" style={{ cursor: "pointer" }} onClick={handleEnableCamera}>
                   Enable Camera
                 </button>
               ) : (
-                <button type="button" className="btn-primary" onClick={handleEnterInterview}>
+                <button type="button" className="btn-primary" style={{ cursor: "pointer" }} onClick={handleEnterInterview}>
                   Enter Interview Room
                 </button>
               )}
