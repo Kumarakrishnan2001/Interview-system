@@ -10,7 +10,7 @@
   font-family: 'Outfit', sans-serif;
 
   /* 🔥 IMPORTANT */
-  background-image: linear-gradient(to right, rgba(2, 6, 23, 0.95) 0%, rgba(2, 6, 23, 0.6) 100%), url("../assets/Ai-robut3.jpg");
+  background-image: linear-gradient(to right, rgba(2, 6, 23, 0.747) 0%, rgba(2, 6, 23, 0.6) 100%), url("../assets/Ai-robut3.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -177,7 +177,7 @@ new about
 .about-interview {
   font-family: 'Outfit', sans-serif;
   padding: 100px 50px;
-  background-image: linear-gradient(to top, rgba(2, 6, 23, 1), rgba(15, 23, 42, 0.85)), url("../assets/Ai-robot2.jpg");
+  background-image: linear-gradient(to right, rgba(2, 6, 23, 0.95) 0%, rgba(2, 6, 23, 0.6) 100%), url("../assets/Ai-robot2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -245,6 +245,17 @@ new about
   font-weight: 800;
   font-size: 18px;
   box-shadow: 0 4px 16px rgba(0, 224, 255, 0.4);
+}
+
+
+/* FOOTER */
+.footer {
+  background: #0f172a;
+  color: #94a3b8;
+
+  padding: 24px 20px;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* Responsive Design */

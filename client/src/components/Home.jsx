@@ -123,6 +123,10 @@ export default function Home({ onStartInterview }) {
           </div>
         </div>
       </section>
+      {/* FOOTER */}
+      <footer className="footer">
+        <p>&copy; 2026 AI Interview System. All rights reserved.    <span style={{ marginLeft: "150px" }}>Contact: [+91 9797577273]</span><span style={{ marginLeft: "300px" }}> Email: [EMAIL_AI@gmail.com]</span></p>
+      </footer>
     </>
   );
 }

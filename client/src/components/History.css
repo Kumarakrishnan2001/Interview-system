@@ -1,7 +1,7 @@
 /* Existing Styles */
 .history-container {
     min-height: 100vh;
-    background: linear-gradient(135deg, #5e5656 30%, #72716f 100%);
+    background: linear-gradient(135deg, #865f0a8c 30%, #8da6ec 100%);
     padding: 40px;
     font-family: 'Outfit', sans-serif;
     color: #fff;
@@ -31,7 +31,7 @@
 }
 
 .history-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(78, 77, 77, 0.644);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 20px;
@@ -43,7 +43,7 @@
 
 .history-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 30px rgba(22, 1, 1, 0.993);
     border-color: rgba(0, 230, 255, 0.3);
 }
 
