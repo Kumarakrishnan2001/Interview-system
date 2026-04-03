@@ -8,7 +8,7 @@
   min-height: 100vh;
   width: 100%;
   font-family: 'Outfit', sans-serif;
-
+   
   /* 🔥 IMPORTANT */
   background-image: linear-gradient(to right, rgba(2, 6, 23, 0.747) 0%, rgba(2, 6, 23, 0.6) 100%), url("../assets/Ai-robut3.jpg");
   background-size: cover;
